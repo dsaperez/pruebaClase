@@ -59,6 +59,9 @@ public class User implements UserDetails {
 	@Column(name = "ciudad", nullable = true)
 	private String ciudad;;
 
+	@Column(name = "pais", nullable = true)
+	private String pais;
+
 	/**
 	 * Rol del usuario en el sistema (USER o ADMIN).
 	 */
@@ -129,11 +132,12 @@ public class User implements UserDetails {
 	}
 
 	
-	public User(int edad, LocalDate fechaNacimiento, String ciudad) {
+	public User(int edad, LocalDate fechaNacimiento, String ciudad, String pais) {
 		super();
 		this.edad = edad;
 		this.fechaNacimiento = fechaNacimiento;
 		this.ciudad = ciudad;
+		this.pais = pais;
 	}
 
 
