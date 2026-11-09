@@ -59,6 +59,9 @@ public class User implements UserDetails {
 	@Column(name = "ciudad", nullable = true)
 	private String ciudad;;
 
+	@Column(name = "pais", nullable = true)
+	private String pais;
+
 	/**
 	 * Rol del usuario en el sistema (USER o ADMIN).
 	 */
