@@ -132,11 +132,12 @@ public class User implements UserDetails {
 	}
 
 	
-	public User(int edad, LocalDate fechaNacimiento, String ciudad) {
+	public User(int edad, LocalDate fechaNacimiento, String ciudad, String pais) {
 		super();
 		this.edad = edad;
 		this.fechaNacimiento = fechaNacimiento;
 		this.ciudad = ciudad;
+		this.pais = pais;
 	}
 
 
